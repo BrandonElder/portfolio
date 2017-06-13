@@ -1,0 +1,60 @@
+<!-- Preloader-->
+<div class="page-loader">
+    <div class="loader">Loading...</div>
+</div>
+<!-- Preloader end-->
+
+<%= render "partials/menu" %>
+
+<div class="wrapper">
+
+<%= render "partials/hero" %>
+
+    <!-- Content section-->
+    <section class="split-content">
+        <!-- Page content-->
+        <section class="module">
+            <div class="container-fluid container-custom">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <article class="post">
+                            <div class="post-header">
+                                <h1 class="post-title">Big Beards & Home Brewed Ale.</h1>
+                                <ul class="post-meta">
+                                    <li><span>December 11, 2014</span></li>
+                                    <li><a href="#">Illstration</a> <a href="#">Printing</a> <a href="#">Design</a></li>
+                                </ul>
+                            </div>
+                            <div class="post-content">
+                                <p><%= link_to (image_tag("camelotchess1.JPG")), ("https://camelotchess.herokuapp.com") %></p>
+                                <p><%= link_to (image_tag("s-2.jpg")), image_path("s-2.jpg"), rel: "gallery" %></p>
+                                <p><%= link_to (image_tag("s-3.jpg")), image_path("s-3.jpg"), rel: "gallery" %></p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <!-- Portfolio detail-->
+                <div class="row">
+                    <div class="col-sm-4">
+                        <ul class="list-unstyled">
+                            <li>Client: Design'd Inc</li>
+                            <li>Date: June 12, 2014</li>
+                            <li>Type: Printing</li>
+                            <li>Site: <a href="#">www.clientsite.com</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-8">
+                        <p class="lead">Exercitation photo booth stumptown tote bag Banksy, elit small batch freegan sed.</p>
+                        <p>Exercitation photo booth stumptown tote bag Banksy, elit small batch freegan sed. Craft beer elit seitan exercitation, photo booth et 8-bit kale chips proident chillwave deep v laborum. Aliquip veniam delectus, Marfa eiusmod Pinterest in do umami readymade swag.</p>
+                    </div>
+                </div>
+                <!-- Portfolio detail end-->
+            </div>
+        </section>
+        <!-- Page content end-->
+
+        <%= render 'partials/footer' %>
+
+    </section>
+    <!-- Content section end-->
+</div>
