@@ -1600,7 +1600,18 @@ ul.page-numbers > li > span:hover {
     display: none;
     background-position: 50% 0;
     background-color: #222222;
+}
+
+.index-img {
     background-image: url('hero9.jpg');
+}
+
+.resume-img {
+    background-image: url('resume.jpg');
+}
+
+.portfolio-img {
+    background-image: url('portfolio.jpg');
 }
 
 .split-content {
@@ -1690,13 +1701,17 @@ ul.page-numbers > li > span:hover {
 [Portfolio grid]
 */
 
+.p2img {
+    border: 1px solid black;
+}
+
 .row-portfolio {
     margin-left: -5px;
     margin-right: -5px;
 }
 
 .portfolio-item {
-    width: 50%;
+    /* width: 50%; */
     padding: 0px 5px 10px;
 }
 
@@ -1794,6 +1809,10 @@ a[rel~="gallery"]:hover {
 /*------------------------------------------------------------------
 [Gallery]
 */
+
+.gram {
+    border: 1px solid black;
+}
 
 a[rel~="gallery"]:hover {
     opacity: 0.8;

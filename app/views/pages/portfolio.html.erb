@@ -3,13 +3,33 @@
     <div class="loader">Loading...</div>
 </div>
 <!-- Preloader end-->
-
-<%= render "partials/menu" %>
-
+<!-- Show menu-->
+<div class="show-menu-btn">
+<span></span>
+<span></span>
+<span></span>
+</div>
+<!-- Show menu end-->
+<!-- Menu-->
+<div class="overlay-menu">
+    <div class="menu-table">
+        <div class="menu-table-cell">
+            <ul class="navigation">
+                <li><%= link_to 'Profile', root_path %></li>
+                <li><%= link_to 'Resume', resume_path %></li>
+                <li><%= link_to 'Portfolio', portfolio_path %></li>
+                <li><%= link_to 'Blog', blog_path %></li>
+                <li><%= link_to 'Contact', contact_path %></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- Menu end-->
 <div class="wrapper">
-
-<%= render "partials/hero" %>
-
+<!-- Hero section-->
+<section class="split-image parallax portfolio-img" >
+</section>
+<!-- Hero section end-->
     <!-- Content section-->
     <section class="split-content">
         <!-- Page content-->
@@ -19,17 +39,49 @@
                     <div class="col-sm-12">
                         <article class="post">
                             <div class="post-header">
-                                <h1 class="post-title">Big Beards & Home Brewed Ale.</h1>
+                                <h1 class="post-title">Latest Works & Projects.</h1>
                                 <ul class="post-meta">
-                                    <li><span>December 11, 2014</span></li>
-                                    <li><a href="#">Illstration</a> <a href="#">Printing</a> <a href="#">Design</a></li>
+                                    <li><span>2016 | 2017</span></li>
                                 </ul>
                             </div>
-                            <div class="post-content">
-                                <p><%= link_to (image_tag("camelotchess1.JPG")), ("https://camelotchess.herokuapp.com") %></p>
-                                <p><%= link_to (image_tag("s-2.jpg")), image_path("s-2.jpg"), rel: "gallery" %></p>
-                                <p><%= link_to (image_tag("s-3.jpg")), image_path("s-3.jpg"), rel: "gallery" %></p>
+
+                            <!--  Project #1 -->
+                            <%=link_to("https://camelotchess.herokuapp.com") do %>
+                            <div class="post-content portfolio-item brand">
+                                <div class="portfolio-wrapper"><%= image_tag("camelotchess1.JPG") %>
+                                    <div class="portfolio-overlay"></div>
+                                    <div class="portfolio-caption">
+                                        <h6 class="portfolio-title">Camelot Chess</h6><span class="portfolio-subtitle">Ruby On Rails / JS Chess Project</span>
+                                    </div>
+                                </div>
                             </div>
+                            <% end %>
+                            <!-- Project #1 End -->
+                            <!--  Project #2 -->
+                            <%=link_to("https://belder-grammable.herokuapp.com") do %>
+                            <div class="post-content portfolio-item brand">
+                                <div class="portfolio-wrapper p2img"><%= image_tag("grammable1.JPG") %>
+                                    <div class="portfolio-overlay"></div>
+                                    <div class="portfolio-caption">
+                                        <h6 class="portfolio-title">Grammable</h6><span class="portfolio-subtitle">RoR Instagram Clone</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <% end %>
+                            <!-- Project #2 End -->
+                            <!--  Project #3 -->
+                            <%=link_to("https://belder-grammable.herokuapp.com") do %>
+                            <div class="post-content portfolio-item brand">
+                                <div class="portfolio-wrapper"><%= image_tag("flixter1.JPG") %>
+                                    <div class="portfolio-overlay"></div>
+                                    <div class="portfolio-caption">
+                                        <h6 class="portfolio-title">Flixter</h6><span class="portfolio-subtitle">Ruby on Rails</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <% end %>
+                            <!-- Project #3 End -->
+
                         </article>
                     </div>
                 </div>

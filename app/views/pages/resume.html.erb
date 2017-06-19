@@ -3,13 +3,33 @@
     <div class="loader">Loading...</div>
 </div>
 <!-- Preloader end-->
-
-<%= render "partials/menu" %>
-
+<!-- Show menu-->
+<div class="show-menu-btn">
+<span></span>
+<span></span>
+<span></span>
+</div>
+<!-- Show menu end-->
+<!-- Menu-->
+<div class="overlay-menu">
+    <div class="menu-table">
+        <div class="menu-table-cell">
+            <ul class="navigation">
+                <li><%= link_to 'Profile', root_path %></li>
+                <li><%= link_to 'Resume', resume_path %></li>
+                <li><%= link_to 'Portfolio', portfolio_path %></li>
+                <li><%= link_to 'Blog', blog_path %></li>
+                <li><%= link_to 'Contact', contact_path %></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- Menu end-->
 <div class="wrapper">
-
-    <%= render "partials/hero" %>
-
+<!-- Hero section-->
+<section class="split-image parallax resume-img" >
+</section>
+<!-- Hero section end-->
     <!-- Content section-->
     <section class="split-content">
         <!-- Page title-->
@@ -84,6 +104,41 @@
             </div>
         </section>
         <!-- Work Experience end-->
+        <!-- Language Skills-->
+        <section class="module">
+            <div class="container-fluid container-custom">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <h6>Language Skills.</h6>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="pie-chart">
+                                    <div class="chart" data-percent="82">
+                                        <div class="chart-text">82</div>
+                                    </div>
+                                    <div class="chart-title">
+                                        <h6>English</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="pie-chart">
+                                    <div class="chart" data-percent="64">
+                                        <div class="chart-text">64</div>
+                                    </div>
+                                    <div class="chart-title">
+                                        <h6>German</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Language Skills end-->
 
         <%= render 'partials/footer' %>
         

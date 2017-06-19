@@ -3,12 +3,31 @@
     <div class="loader">Loading...</div>
 </div>
 <!-- Preloader end-->
-
-<%= render "partials/menu" %>
-
+<!-- Show menu-->
+<div class="show-menu-btn">
+<span></span>
+<span></span>
+<span></span>
+</div>
+<!-- Show menu end-->
+<!-- Menu-->
+<div class="overlay-menu">
+    <div class="menu-table">
+        <div class="menu-table-cell">
+            <ul class="navigation">
+                <li><%= link_to 'Profile', root_path %></li>
+                <li><%= link_to 'Resume', resume_path %></li>
+                <li><%= link_to 'Portfolio', portfolio_path %></li>
+                <li><%= link_to 'Blog', blog_path %></li>
+                <li><%= link_to 'Contact', contact_path %></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- Menu end-->
 <div class="wrapper">
 <!-- Hero section-->
-<section class="split-image parallax" >
+<section class="split-image parallax index-img" >
 </section>
 <!-- Hero section end-->
     <!-- Content section-->

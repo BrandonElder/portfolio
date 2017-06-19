@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   get 'portfolio', to: 'pages#portfolio'
   get 'blog', to: 'pages#blog'
   get 'contact', to: 'pages#contact'
+  get 'single', to: 'pages#single'
 
   
 end
