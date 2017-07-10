@@ -195,6 +195,10 @@ ol > li {
     margin: 0 0 5px;
 }
 
+.res-list {
+    list-style-type: disc;
+}
+
 blockquote {
     border: 0;
     font-family: "Suranna", Arial, serif;
@@ -944,6 +948,12 @@ blockquote:before {
     font-size: 15px;
     color: #898989;
     opacity: 0.6;
+}
+
+.resume-subtitle {
+    font-size: 15px;
+    color: #898989;
+    opacity: 0.8;
 }
 
 /*------------------------------------------------------------------

@@ -17,7 +17,6 @@
 //= require bootstrap.min.js
 //= require plugins.min.js
 //= require custom.min.js
-//= require style-switcher.min.js
 //= require jquery_ujs
 //= require rails-ujs
 //require turbolinks
