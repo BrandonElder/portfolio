@@ -26,10 +26,10 @@
 </div>
 <!-- Menu end-->
 <div class="wrapper">
-<!-- Hero section-->
-<section class="split-image parallax index-img" >
-</section>
-<!-- Hero section end-->
+    <!-- Hero section-->
+    <section class="split-image parallax index-img" >
+    </section>
+    <!-- Hero section end-->
     <!-- Content section-->
     <section class="split-content">
         <!-- Hello text-->
@@ -38,7 +38,7 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <h1>Hello, I am Brandon Elder<br>Ruby On Rails Developer.</h1>
-                        <p>I am a full-stack web developer with experience mainly focused around the Ruby on Rails framework. I have built several applications with Rails and have recently turned my attention to learning more about front-end development and design. I am currently seeking a role with a company that can offer the opportunity to grow and acquire new skills while challenging me to apply what I have learned so far.</p>
+                        <p>I am a full-stack web developer experienced mainly with the Ruby on Rails framework. I have built several applications with Rails and have recently turned my attention to learning more about front-end development and design. I am currently seeking a role with a company that can offer the opportunity to grow and acquire new skills while challenging me to apply what I've learned so far.</p>
                     </div>
                 </div>
             </div>
@@ -58,45 +58,13 @@
                             <li>Address: 2630 Hitchcock Dr, Durham NC</li>
                             <li>Phone: 317-833-8808</li>
                             <li>E-mail: <%= mail_to "brandonelder3@gmail.com", "brandonelder3@gmail.com" %></li>
-                            <li>Website: <%= link_to "github", "https://github.com/BrandonElder" %></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
         <!-- Personal info end-->
-        <!-- Services-->
-        <section class="module">
-            <div class="container-fluid container-custom">
-                <div class="row">
-                    <div class="col-sm-4">
-                        <h6>Services.</h6>
-                    </div>
-                    <div class="col-sm-8">
-                        <p>Exercitation photo booth stumptown tote bag Banksy, elit small batch freegan sed. Craft beer elit seitan exercitation, photo booth et 8-bit kale chips proident chillwave deep v laborum.</p>
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <ul class="service-list">
-                                    <li>Digital Strategy</li>
-                                    <li>Software Development</li>
-                                    <li>Content Direction</li>
-                                    <li>Interaction Design</li>
-                                </ul>
-                            </div>
-                            <div class="col-sm-6">
-                                <ul class="service-list">
-                                    <li>Websites + Apps</li>
-                                    <li>Responsive Design</li>
-                                    <li>Digital Marketing</li>
-                                    <li>User Experience</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Services end-->
+        
         <!-- Professional skills-->
         <section class="module">
             <div class="container-fluid container-custom">
@@ -123,17 +91,33 @@
                         <!-- Progress bar end-->
                         <!-- Progress bar-->
                         <div class="progress-item">
-                            <div class="progress-title">Javascript, <span class="p-coutn"></span>%</div>
+                            <div class="progress-title">Javascript & JQuery, <span class="p-coutn"></span>%</div>
                             <div class="progress">
-                                <div class="progress-bar" aria-valuenow="60" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar" aria-valuenow="50" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
                         <!-- Progress bar end-->
                         <!-- Progress bar-->
                         <div class="progress-item">
-                            <div class="progress-title">HTML/CSS, <span class="p-coutn"></span>%</div>
+                            <div class="progress-title">HTML, <span class="p-coutn"></span>%</div>
+                            <div class="progress">
+                                <div class="progress-bar" aria-valuenow="90" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <!-- Progress bar end-->
+                        <!-- Progress bar-->
+                        <div class="progress-item">
+                            <div class="progress-title">CSS, Sass & Frameworks, <span class="p-coutn"></span>%</div>
                             <div class="progress">
                                 <div class="progress-bar" aria-valuenow="80" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <!-- Progress bar end-->
+                        <!-- Progress bar-->
+                        <div class="progress-item">
+                            <div class="progress-title">Github & Bitbucket, <span class="p-coutn"></span>%</div>
+                            <div class="progress">
+                                <div class="progress-bar" aria-valuenow="70" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
                         <!-- Progress bar end-->
@@ -142,10 +126,7 @@
             </div>
         </section>
         <!-- Professional skills end-->
-        
-
         <%= render 'partials/footer' %>
-
     </section>
     <!-- Content section end-->
 </div>
