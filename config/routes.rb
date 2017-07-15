@@ -8,5 +8,7 @@ Rails.application.routes.draw do
   get 'contact', to: 'pages#contact'
   get 'single', to: 'pages#single'
 
+  get 'message', to: 'messages#new', as: 'message'
+  post 'message', to: 'messages#create'
   
 end
