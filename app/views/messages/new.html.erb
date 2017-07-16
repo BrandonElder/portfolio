@@ -54,12 +54,20 @@
                         <h6>Send me an email.</h6>
                     </div>
                     <div class="col-sm-8">
-                    <%= form_for @message, url: message_path do |message_form| %>
+                    <%= form_for @message, url: contact_path do |message_form| %>
                         <form id="contact-form" method="post" novalidate>
                             <div class="row">
                               <div class="col-sm-12">
                                 <div class="form-group">
-                                  <%= message_form.text_field :name, placeholder: "Name", class: "form-control" %>
+                                  <%= message_form.text_field :firstName, placeholder: "First Name", class: "form-control" %>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                  <%= message_form.text_field :lastName, placeholder: "Last Name", class: "form-control" %>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                  <%= message_form.text_field :company, placeholder: "Company", class: "form-control" %>
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
