@@ -1,0 +1,100 @@
+<%= render "partials/menu" %>
+<div class="wrapper">
+    <!-- Hero section-->
+    <section class="split-image parallax portfolio-img" >
+    </section>
+    <!-- Hero section end-->
+    <!-- Content section-->
+    <section class="split-content">
+        <!-- Page title-->
+        <section class="module">
+            <div class="container-fluid container-custom">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h1>Let´s Talk About Your Project.</h1>
+                        <p>Exercitation photo booth stumptown tote bag Banksy, elit small batch freegan sed. Craft beer elit seitan exercitation, photo booth et 8-bit kale chips proident chillwave deep v laborum. Aliquip veniam delectus, Marfa eiusmod Pinterest in do umami readymade swag.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Page title end-->
+        <!-- MAP-->
+        <div class="maps-container">
+            <div id="map" data-addresses="[48.859822, 2.352647],[47.394930, 0.683666]" data-info="[Lorem ipsum dolor sit amet.],[Lorem ipsum dolor sit amet.]" data-icon="assets/images/map-icon.png" data-zoom="5"></div>
+        </div>
+        <!-- END MAP-->
+        <!-- Reach me-->
+        <section class="module">
+            <div class="container-fluid container-custom">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <h6>Reach me.</h6>
+                    </div>
+                    <div class="col-sm-4">
+                        <h6>Phone:</h6>
+                        <ul>
+                            <li>317 833 8808</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4">
+                        <h6>E-mail:</h6>
+                        <ul>
+                            <li><a href="#">brandonelder3@gmail.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Reach me end-->
+        <!-- Contatc form-->
+        <section class="module">
+            <div class="container-fluid container-custom">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <h6>Send me an email.</h6>
+                    </div>
+                    <div class="col-sm-8">
+                    <%= form_for @message, url: contact_path do |message_form| %>
+                        <form id="contact-form" method="post" novalidate>
+                            <div class="row">
+                              <div class="col-sm-12">
+                                <div class="form-group">
+                                  <%= message_form.text_field :firstName, placeholder: "First Name", class: "form-control" %>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                  <%= message_form.text_field :lastName, placeholder: "Last Name", class: "form-control" %>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                  <%= message_form.text_field :company, placeholder: "Company", class: "form-control" %>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                  <%= message_form.email_field :email, placeholder: "Email", class: "form-control" %>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                              </div>
+                              <div class="col-sm-12">
+                                <div class="form-group">
+                                  <%= message_form.text_area :content, placeholder: "Message", class: "form-control", rows: "7", required: "" %>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                              <%= message_form.submit "Send", class: "btn btn-brand", type: "submit", value: "Submit" %>
+                            </div>
+                          </div>
+                        </form>
+                        <% end %>
+                        <!-- Ajax response-->
+                        <div class="ajax-response text-center" id="contact-response"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact form end-->  
+        <%= render 'partials/footer' %> 
+    </section>
+    <!-- Content section end-->
+</div>
