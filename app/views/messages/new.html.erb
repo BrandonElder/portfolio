@@ -11,8 +11,9 @@
             <div class="container-fluid container-custom">
                 <div class="row">
                     <div class="col-sm-12">
-                        <h1>Let´s Talk About Your Project.</h1>
-                        <p>Exercitation photo booth stumptown tote bag Banksy, elit small batch freegan sed. Craft beer elit seitan exercitation, photo booth et 8-bit kale chips proident chillwave deep v laborum. Aliquip veniam delectus, Marfa eiusmod Pinterest in do umami readymade swag.</p>
+                        <h1>Contact Me</h1>
+                        <p>Please feel free to conact me in any way, for any reason...if you'd like to discuss a project, collaboration, or have a potential opportunity for which I might be a good fit.
+                        I would love to hear from you.</p>
                     </div>
                 </div>
             </div>
@@ -59,25 +60,25 @@
                             <div class="row">
                               <div class="col-sm-12">
                                 <div class="form-group">
-                                  <%= message_form.text_field :firstName, placeholder: "First Name", class: "form-control" %>
+                                  <%= message_form.text_field :firstName, placeholder: "First Name", required: true, class: "form-control" %>
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
-                                  <%= message_form.text_field :lastName, placeholder: "Last Name", class: "form-control" %>
+                                  <%= message_form.text_field :lastName, placeholder: "Last Name", required: true, class: "form-control" %>
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
-                                  <%= message_form.text_field :company, placeholder: "Company", class: "form-control" %>
+                                  <%= message_form.text_field :company, placeholder: "Company", required: true, class: "form-control" %>
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
-                                  <%= message_form.email_field :email, placeholder: "Email", class: "form-control" %>
+                                  <%= message_form.email_field :email, placeholder: "Email", required: true, class: "form-control" %>
                                     <p class="help-block text-danger"></p>
                                 </div>
                               </div>
                               <div class="col-sm-12">
                                 <div class="form-group">
-                                  <%= message_form.text_area :content, placeholder: "Message", class: "form-control", rows: "7", required: "" %>
+                                  <%= message_form.text_area :content, placeholder: "Message", required: true, class: "form-control", rows: "7", required: "" %>
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
