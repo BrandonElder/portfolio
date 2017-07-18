@@ -1,0 +1,40 @@
+/* added styles */
+
+input[type="submit"]:disabled {
+  cursor: progress;
+}
+
+.p2img {
+  border: 1px solid grey;
+}
+
+.index-img {
+  background-image: url('hero9.jpg');
+}
+
+.resume-img {
+  background-image: url('resume.jpg');
+}
+
+.portfolio-img {
+  background-image: url('hero36.jpg');
+}
+
+.contact-img {
+  background-image: url('portfolio.jpg');
+}
+
+.resume-list {
+  list-style-type: disc;
+}
+
+.contact-module-top {
+    background-color: #ffffff;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 50px 0 36px 0; 
+}
+
+

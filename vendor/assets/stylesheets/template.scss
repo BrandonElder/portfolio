@@ -195,10 +195,6 @@ ol > li {
     margin: 0 0 5px;
 }
 
-.res-list {
-    list-style-type: disc;
-}
-
 blockquote {
     border: 0;
     font-family: "Suranna", Arial, serif;
@@ -1055,8 +1051,9 @@ ul.page-numbers > li > span:hover {
 */
 
 .maps-container {
-    height: 450px;
-    margin: 0 -40px;
+    height: 350px;
+    width: 100%;
+    margin: 0 auto 30px auto;
 }
 
 #map {
@@ -1434,6 +1431,15 @@ ul.page-numbers > li > span:hover {
     padding: 50px 0;
 }
 
+.contact-module-top {
+    background-color: #ffffff;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 50px 0 36px 0; 
+}
+
 .parallax {
     background-color: transparent;
 }
@@ -1612,18 +1618,6 @@ ul.page-numbers > li > span:hover {
     background-color: #222222;
 }
 
-.index-img {
-    background-image: url('hero9.jpg');
-}
-
-.resume-img {
-    background-image: url('resume.jpg');
-}
-
-.portfolio-img {
-    background-image: url('hero36.jpg');
-}
-
 .split-content {
     padding: 100px 40px 0;
     padding: 70px 40px 0;
@@ -1710,10 +1704,6 @@ ul.page-numbers > li > span:hover {
 /*------------------------------------------------------------------
 [Portfolio grid]
 */
-
-.p2img {
-    border: 1px solid grey;
-}
 
 .row-portfolio {
     margin-left: -5px;

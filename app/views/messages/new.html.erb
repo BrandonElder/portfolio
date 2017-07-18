@@ -1,13 +1,13 @@
 <%= render "partials/menu" %>
 <div class="wrapper">
     <!-- Hero section-->
-    <section class="split-image parallax portfolio-img" >
+    <section class="split-image parallax contact-img" >
     </section>
     <!-- Hero section end-->
     <!-- Content section-->
     <section class="split-content">
         <!-- Page title-->
-        <section class="module">
+        <section class="contact-module-top">
             <div class="container-fluid container-custom">
                 <div class="row">
                     <div class="col-sm-12">
@@ -21,7 +21,11 @@
         <!-- Page title end-->
         <!-- MAP-->
         <div class="maps-container">
-            <div id="map" data-addresses="[48.859822, 2.352647],[47.394930, 0.683666]" data-info="[Lorem ipsum dolor sit amet.],[Lorem ipsum dolor sit amet.]" data-icon="assets/images/map-icon.png" data-zoom="5"></div>
+            <iframe id="map"
+              frameborder="0" 
+              style="border:0"
+              src="https://www.google.com/maps/embed/v1/view?key=AIzaSyBn0KMTyIiS5spCBxpJhM5Vwy6XZreE248&center=35.996589, -78.900691&zoom=9" allowfullscreen>
+            </iframe>
         </div>
         <!-- END MAP-->
         <!-- Reach me-->
@@ -40,7 +44,7 @@
                     <div class="col-sm-4">
                         <h6>E-mail:</h6>
                         <ul>
-                            <li><a href="#">brandonelder3@gmail.com</a></li>
+                            <li><%= mail_to "brandonelder3@gmail.com", "brandonelder3@gmail.com" %></a></li>
                         </ul>
                     </div>
                 </div>
@@ -83,7 +87,7 @@
                                 </div>
                             </div>
                             <div class="col-sm-12">
-                              <%= message_form.submit "Send", class: "btn btn-brand", type: "submit", value: "Submit" %>
+                              <%= message_form.submit "Sending", class: "btn btn-brand", type: "submit", value: "Send" %>
                             </div>
                           </div>
                         </form>
