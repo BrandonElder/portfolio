@@ -1,7 +1,29 @@
-/* added styles */
+/* added styles - includes any alterations to the theme here */
+/* there are so few that I didn't feel the need to sort them */
+/* all other styles are in vendor assets */
+
+.alert-alert {
+  @extend .alert-danger;
+}
+
+.alert-notice {
+  @extend .alert-warning;
+}
+
+.alert.alert-success.alert-dismissible,
+.alert.alert-alert.alert-dismissible {
+  margin-top: 60px;
+  text-align: center;
+
+  @media all and (min-width: 992px) {
+    width: 50%;
+    text-align: center;
+    margin-left: 50%;
+  }
+}
 
 input[type="submit"]:disabled {
-  cursor: progress;
+  cursor: none;
 }
 
 .p2img {
@@ -9,19 +31,19 @@ input[type="submit"]:disabled {
 }
 
 .index-img {
-  background-image: url('hero9.jpg');
+  background-image: url('hero1.jpg');
 }
 
 .resume-img {
-  background-image: url('resume.jpg');
+  background-image: url('hero2.jpg');
 }
 
 .portfolio-img {
-  background-image: url('hero36.jpg');
+  background-image: url('hero3.jpg');
 }
 
 .contact-img {
-  background-image: url('portfolio.jpg');
+  background-image: url('hero5.jpg');
 }
 
 .resume-list {
@@ -37,4 +59,8 @@ input[type="submit"]:disabled {
     padding: 50px 0 36px 0; 
 }
 
+#map {
+  filter: grayscale(90%);
+  webkit-filter: grayscale(90%);
+}
 
