@@ -13,7 +13,7 @@ class Message
     presence: true
 
   validates :company,
-    presence: true
+    presence: false
 
   validates :email,
     presence: true
