@@ -12,13 +12,14 @@
 
 .alert.alert-success.alert-dismissible,
 .alert.alert-alert.alert-dismissible {
-  margin-top: 60px;
+  margin: 80px auto 0 auto;
+  width: 70%;
   text-align: center;
 
   @media all and (min-width: 992px) {
-    width: 50%;
+    width: 40%;
     text-align: center;
-    margin-left: 50%;
+    margin-left: 55%;
   }
 }
 
