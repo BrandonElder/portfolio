@@ -1,13 +1,13 @@
-<% flash.each do |key, value| %>
-  <div class="alert alert-<%= key %> alert-dismissible">
-    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-    <%= value %>
-   </div>
-<% end %>
+
 <%= render "partials/menu" %>
 <div class="wrapper">
     <!-- Hero section-->
     <section class="split-image parallax contact-img" >
+        <div class="split-image-footer">
+            <ul class="split-list">
+                <li><%= link_to "Download Resume", download_pdf_path %></li>
+            </ul>
+        </div>
     </section>
     <!-- Hero section end-->
     <!-- Content section-->

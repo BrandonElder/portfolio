@@ -9,5 +9,7 @@ Rails.application.routes.draw do
 
   get 'contact', to: 'messages#new', as: 'contact'
   post 'contact', to: 'messages#create'
+
+  get 'download_pdf', to: "pdf#download_pdf"
   
 end
