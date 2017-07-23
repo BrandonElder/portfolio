@@ -22,12 +22,54 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <h1>Education &amp; Work Experience</h1>
-                        <p>Exercitation photo booth stumptown tote bag Banksy, elit small batch freegan sed. Craft beer elit seitan exercitation, photo booth et 8-bit kale chips proident chillwave deep v laborum. Aliquip veniam delectus, Marfa eiusmod Pinterest in do umami readymade swag.</p>
+                        <p>Resume: <%= link_to " View ", asset_path("resume.pdf") %>|<%= link_to " Download", download_pdf_path %></li></p>
                     </div>
                 </div>
             </div>
         </section>
         <!-- Page title end-->
+        <!-- Work Experience-->
+        <section class="module">
+            <div class="container-fluid container-custom">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <h6>Work Experience.</h6>
+                    </div>
+                    <div class="col-sm-8">
+                        <ul class="resume-info">
+                            <li>
+                                <h6 class="resume-title">Worked on a Remote Agile Team</h6>
+                                <h6 class="resume-meta">2016 - 2017</h6>
+                                <p>Worked on a team of 5 developers to build a Ruby on Rails chess application that fully enforces the rules of the game.</p>
+                                <ul type="circle" class="resume-list">
+                                    <li>Worked on several of the app’s features completing both front and back end tasks.
+                                    <li>Followed standard Agile and SCRUM methodologies and best practices including test-driven-development, pair programming, and frequent code reviews under the guidance of a senior developer.</li>
+                                    <li>Uncovered, tracked down, and resolved bugs.</li>
+                                    <li>Used the RuboCop gem to enforce the team’s conformity to the Ruby style guide.</li>
+                                    <li>Used CodeShip as a platform for continuous integration and deployment.
+                                    </li>
+                                    <li>Used Trello as an Agile board and Slack to ensure great communication between all developers.
+                                </ul>
+                            </li>
+                            <li>
+                                <h6 class="resume-title">Larry's Coffee</h6>
+                                <h6 class="resume-meta">2016 - Present</h6>
+                                <p>Lead production coffee roaster.</p>
+                                <ul type="circle" class="resume-list">
+                                    <li>Manage the day to day operations of the roasting department.</li>
+                                    <li>Use specially designed software to monitor orders and inventory while efficiently meeting production needs.
+                                    <li>Train &amp; work with assistant roasters.</li>
+                                    <li>Use Cropster &amp; other industry applications to analyze and improve roasting profiles.
+                                    <li>Formulate unique roasting profiles to create new and experimental roasts.</li>
+                                    <li>Comandeer and consume copious amounts of coffee to fuel late nights of coding.
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Work Experience end-->
         <!-- Education-->
         <section class="module">
             <div class="container-fluid container-custom">
@@ -57,6 +99,7 @@
                                 <ul type="circle" class="resume-list">
                                     <li>The Ruby On Rails Tutorial: Learn Web Development With Rails - Michael Hartl</li>
                                     <li>The Complete Javascript Course: Building a Real-World Project - Jonas Schmedtmann / Udemy
+                                    <li>The Complete SQL Bootcamp - Jose Portilla / Udemy
                                     <li>Disectiing Ruby on Rails 5: Becoming a Professional Developer - Jordan Hudgens / Udemy</li>
                                     <li>Ruby - Learn Javascript - JQuery / Codecademy
                                 </ul>
@@ -67,48 +110,6 @@
             </div>
         </section>
         <!-- Education end-->
-        <!-- Work Experience-->
-        <section class="module">
-            <div class="container-fluid container-custom">
-                <div class="row">
-                    <div class="col-sm-4">
-                        <h6>Work Experience.</h6>
-                    </div>
-                    <div class="col-sm-8">
-                        <ul class="resume-info">
-                            <li>
-                                <h6 class="resume-title">Worked on a Remote Agile Team</h6>
-                                <h6 class="resume-meta">2016 - 2017</h6>
-                                <p>Worked on a team of 5 developers to build a Ruby on Rails chess application that fully enforces the rules of the game.</p>
-                                <ul type="circle" class="resume-list">
-                                    <li>Built several of the app’s features, most notably (link to github).
-                                    <li>Followed standard Agile and SCRUM methodologies and best practices including test-driven-development, pair programming, and frequent code reviews under the guidance of a senior developer.</li>
-                                    <li>Uncovered, tracked down, and resolved bugs.</li>
-                                    <li>Used the RuboCop gem to enforce the team’s conformity to the Ruby style guide.</li>
-                                    <li>Used CodeShip as a platform for continuous integration and deployment.
-                                    </li>
-                                    <li>Used Trello as an Agile board and Slack to ensure great communication between all developers.
-                                </ul>
-                            </li>
-                            <li>
-                                <h6 class="resume-title">Larry's Coffee</h6>
-                                <h6 class="resume-meta">2016 - Present</h6>
-                                <p>Lead production coffee roaster.</p>
-                                <ul type="circle" class="resume-list">
-                                    <li>Manage the day to day operations of the roasting department.</li>
-                                    <li>Use specially designed software to monitor orders and inventory while efficiently meeting production needs.
-                                    <li>Train &amp; work with assistant roasters.</li>
-                                    <li>Use Cropster &amp; other industry applications to analyze and improve roasting profiles.
-                                    <li>Formulate unique roasting profiles to create new and experimental roasts.</li>
-                                    <li>Comandeer and consume copious amounts of coffee to fuel late nights of coding.
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Work Experience end-->
         <%= render 'partials/footer' %>
     </section>
     <!-- Content section end-->
